@@ -68,41 +68,7 @@ The current MVP demonstrates this workflow through a Flutter Android application
 
 # 🔄 Product Flow
 
-
-┌──────────────────┐
-│  Select Document │
-└────────┬─────────┘
-         ↓
-┌──────────────────────┐
-│ Review Sensitive Data│
-└────────┬─────────────┘
-         ↓
-┌──────────────────┐
-│ Set Copy Limit   │
-│   1 / 2 / 3      │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ Set Expiry       │
-│ 5 / 15 / 30 min  │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ Generate QR      │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ Pair With Shop   │
-└────────┬─────────┘
-         ↓
-┌──────────────────┐
-│ Verify Settings  │
-└────────┬─────────┘
-         ↓
-    Print / Expire
-
-
----
+Select Doc -> Review Sensitive Info -> Set Copy Limit (1/2/3) -> Set Expiry Time (5/15/30 mins) -> Generate QR -> Pair With Shop -> Verify Settings -> Print/Expire
 
 # 📱 Current MVP
 
@@ -186,17 +152,13 @@ It should **not** be interpreted as a guarantee of security.
 
 ### Current MVP
 
-
-              Flutter App
-                  │
-       ┌──────────┼──────────┐
-       │          │          │
-    Document     QR       Privacy
-    Selection  Generator    UX
-       │          │          │
-       └──────────┼──────────┘
-                  │
-            Simulated Shop
+                  |------> Document Selection
+                  |
+                  |
+Flutter App---------------> QR Generator
+                  |
+                  |
+                  |-------> Privacy UX
 
 
 ### Planned Architecture
