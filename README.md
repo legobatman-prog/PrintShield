@@ -151,43 +151,19 @@ It should **not** be interpreted as a guarantee of security.
 # 🏗️ Architecture
 
 ### Current MVP
-
-                  |------> Document Selection
-                  |
-                  |
-Flutter App---------------> QR Generator
-                  |
-                  |
+ 
+Flutter App-------|------->Document Selection
+                  |------->QR Generator
                   |-------> Privacy UX
 
 
 ### Planned Architecture
 
 
-                    User
-                     │
-                     ▼
-              Flutter Client
-                     │
-              Encrypted Request
-                     │
-                     ▼
-              PrintShield Backend
-                     │
-        ┌────────────┼────────────┐
-        │            │            │
-   Job Manager   Auth System   Audit Log
-        │            │            │
-        └────────────┼────────────┘
-                     │
-                     ▼
-              Print Shop Client
-                     │
-                     ▼
-                  Printer
+User-------> Flutter Client-----> Encrypted Request------> PrintShield Backend ---> Print Shop Client ----> Printer
 
 
----
+
 
 # 🛡️ Security Roadmap
 
