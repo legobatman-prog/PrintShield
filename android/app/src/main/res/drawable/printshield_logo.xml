@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- PrintShield mark: purple rounded tile with a dark shield. -->
+    <path
+        android:fillColor="#C77DFF"
+        android:pathData="M34,8L74,8C88.36,8 100,19.64 100,34L100,74C100,88.36 88.36,100 74,100L34,100C19.64,100 8,88.36 8,74L8,34C8,19.64 19.64,8 34,8Z" />
+    <path
+        android:fillColor="#0B0711"
+        android:pathData="M54,25L27,36L27,53C27,70.34 38.52,86.55 54,91C69.48,86.55 81,70.34 81,53L81,36L54,25Z" />
+    <path
+        android:fillColor="#C77DFF"
+        android:pathData="M50.25,64.5L40.5,54.75L44.73,50.52L50.25,56.04L63.27,43.02L67.5,47.25L50.25,64.5Z" />
+</vector>
